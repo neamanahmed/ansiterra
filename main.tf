@@ -56,11 +56,6 @@ resource "aws_route_table_association" "private_route_table_association01" {
   route_table_id = aws_route_table.private_route_table01.id
 }
 
-#resource "aws_route" "private_subnet_route" {
-#  route_table_id         = aws_route_table.private_route_table01.id
-#  destination_cidr_block = "10.1.0.0/16"
-#
-#}
 
 # Outputs Section
 
