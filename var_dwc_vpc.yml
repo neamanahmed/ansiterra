@@ -1,0 +1,6 @@
+project_dir: ./
+comp_acc_vpc: /home/ansible/dwc_vpc_info.txt
+aws_access_key_id:  AKIAXXXXXXXXXXXXX
+aws_secret_access_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+aws_region: me-central-1
+
