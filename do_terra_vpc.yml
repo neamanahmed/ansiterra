@@ -1,23 +1,25 @@
 ---
-- name: Deplpying through Terraform
+- name: Deploying AWS Cloud Resources through Terraform
   hosts: localhost
   become: false
   vars_files:
     - var_dwc_vpc.yml
   tasks:
-    - name: Basic deploy of VPC and components for DWC
+    - name: Basic deployment of VPC and components # using Terraform Module
       community.general.terraform:
         project_path: '{{ project_dir }}'
         force_init: true
         provider_upgrade: true
         state: present
+        no_color: false
       environment:
         AWS_ACCESS_KEY_ID: "{{ aws_access_key_id }}"
         AWS_SECRET_ACCESS_KEY: "{{ aws_secret_access_key }}"
         AWS_DEFAULT_REGION: "{{ aws_region }}"
       register: dwc_vpc
 
-    - debug:
+    - name: Display VPC information after creation
+      ansible.builtin.debug:
         msg:
           - 'VpcId:  {{ dwc_vpc.outputs.vpc_id.value }}'
           - 'VpcName: {{  dwc_vpc.outputs.vpc_name.value }}'
