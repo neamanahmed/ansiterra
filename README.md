@@ -56,7 +56,7 @@ This hybrid automation strategy reduces operational overhead and promotes a **si
 Run the main Ansible playbook:
 
 ```bash
-ansible-playbook do_terra_vpc.yml
+ansible-playbook terraform_deploy.yml
 ````
 
 This performs:
@@ -72,7 +72,7 @@ This performs:
 ```bash
 ansiterra/
 ├── ansible.cfg
-├── do_terra_vpc.yml
+├── terraform_deploy.yml
 ├── inventory
 ├── k7tyde9jc7cfl32z43a9.JPG
 ├── main.tf
@@ -84,7 +84,7 @@ ansiterra/
 
 **Highlights:**
 
-* The `do_terra_vpc.yml` playbook wraps Terraform execution and manages outputs.
+* The `terraform_deploy.yml` playbook wraps Terraform execution and manages outputs.
 * The `config.j2` template defines dynamic configuration files. (future refrence for version2)
 * The Terraform directory holds modular IaC definitions for AWS components.
 
