@@ -88,6 +88,7 @@ ansiterra/
 * The `config.j2` template defines dynamic configuration files. (future refrence for version2)
 * The Terraform directory holds modular IaC definitions for AWS components.
 
+![Terraform and Ansible](k7tyde9jc7cfl32z43a9.JPG)
 ---
 
 ##  Key Benefits
