@@ -112,7 +112,7 @@ ansiterra/
 ##  Future Enhancements
 
 * Extend to **multi-region AWS** deployments with cross-region replication.
-* Create **AWS RDS MySQL DB** and  configure connection configuration in local datacenter and other **Cloud OCI, Azure**
+* Create **AWS RDS MySQL DB** and  configure connection configuration in local datacenter and other **Cloud OCI, Azure IOTs**
 * Integrate **HashiCorp Vault** for secrets management.
 * Add **Azure** and **OCI** modules for true multi-cloud support.
 * Implement **auto-remediation playbooks** for configuration drift detection.
