@@ -145,9 +145,3 @@ https://www.linkedin.com/in/neaman-ahmed/
 
 > **Ansiterra — Where Infrastructure Meets Configuration.**
 > *Bridging Cloud and Datacenter Automation Through Ansible and Terraform.*
-
----
-
-```
-
----
